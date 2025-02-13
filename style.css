@@ -1,0 +1,51 @@
+:root {
+--bright: #fff8f5;
+--muted: #998d8d;
+--bg: #120f17;
+--dark-bg: #020202;
+}
+
+html, body {
+font-family: Noto Sans Mono, Monospace;
+background-color: var(--bg);
+width: 40rem;
+margin: auto;
+}
+
+h1 {
+color: var(--bright);
+}
+
+p {
+color: var(--bright);
+font-size: 0.8rem;
+}
+
+p span {
+color: var(--muted);
+}
+
+a {
+color: var(--muted);
+text-decoration: none;
+}
+
+a:hover {
+color: var(--bright);
+}
+
+hr {
+border-top: 1px solid;
+border-image-slice: 1;
+border-image-source: linear-gradient(to right, transparent, var(--muted), transparent);
+}
+
+.block {
+position: relative;
+z-index: 0;
+background-color: rgba(2, 2, 2, 0.4);
+padding-left: 1rem;
+padding-top: 0.2rem;
+padding-bottom: 0.2rem;
+border-radius: 8px;
+}
